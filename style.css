@@ -353,6 +353,7 @@ display: block;
         height: 55vh;
         padding-top: 50px;
         transition: right .5s;
+        z-index: 3;
     }
     nav ul li{
         display: block;
