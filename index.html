@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/vinit_logo_180x65_full_hd.png" class="logo">               
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#services"> Services</a></li>                       
+                    <li><a href="#portfolio"> Portfolio</a></li> 
+                    <li><a href="#contact"> Contact</a></li>
+                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+              <div class="header-text">
+                    <p>Full-stack Developer</p>
+                    <h1>Hi, I'm <span>Vinit Yadav</span> <br>
+                      From India. Welcome To <br> My Portfolio</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------about-Section-------------------------------------- -->
+     <div id="about">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1"> 
+                    <img src="./assets/final-about-section-portrait.jpg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="font-size: 17px; margin-top: 20px;">I'm a passionate Full-Stack Developer with a solid foundation in Core Java, Data Structures & Algorithms, and practical experience as a Teaching Assistant at Coding Ninjas. Proficient in React.js, Node.js, MongoDB, and JavaScript, I enjoy building scalable and user-friendly web applications. Recently graduated from AKTU, I'm now focused on applying my skills to real-world projects and kickstarting my career in software development.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>  Languages & Technologies:</span><br>Java, C, JavaScript, HTML, CSS, Bootstrap, SQL, React.js, Node.js, Express.js, EJS, MongoDB, JDBC</li>
+                            <li><span>Tools & Platforms:</span><br>VS Code, Eclipse, MySQL, GitHub, MongoDB Atlas, Render, Cloudinary, Mapbox</li>
+                            <li><span>Core Concepts:</span><br>
+                            Data Structures and Algorithms, Object-Oriented Programming, Git, MVC Architecture</li>
+                        </ul>
+                    </div>
+
+
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Teaching Assistant – Coding Ninjas (Jun 2024 - oct 2024) Remote</span><br>
+                                Mentored over 500+ students in Data Structures & Algorithms through 1:1 sessions and daily doubt-clearing. <br>
+                                Simplified complex problems using real-life examples tailored to different learning styles.
+                            </li>
+                            <li><span> Internship Trainee – QSpiders Campus Connect ( Nov 2024 - Present ) On-site</span><br>Undergoing hands-on training in Java, SQL, and Web Technologies as part of a structured industrial training program. <br>
+                            Participated in mock interviews, coding tests, and technical sessions to enhance job readiness and development skills.    
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>  B.Tech in Computer Science Engineering ( 2021 – 2025 )</span><br>
+                                Accurate Institute of Management & Technology, Greater Noida (AKTU)
+                            </li>
+                            <li><span>Intermediate ( 2019 – 2021 ) </span><br>
+                                S. Devi I.C. Madhuvan, Mau .
+                            </li>
+                            <li><span> High School ( 2018 – 2019 )</span><br>
+                                Rajbali S.U.M.V. Pidsui Ahilashpur, Mau .
+                           </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+     </div>
+      <!-- ---------------------------- Services-Section--------------------------------------------->
+       <div id="services">
+          <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                      
+                     <div class="web-dev-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Frontend Developer</h2>
+                           <p>
+                        Skilled in HTML, CSS, Bootstrap, and JavaScript with hands-on experience in building responsive UIs using React.js. Focused on creating clean, accessible, and user-friendly interfaces with pixel-perfect design and smooth user experience.
+                         </p>
+                        <a href="#projects">Learn more</a>
+                    </div>
+                    
+                     <div class="web-dev-card">
+                        <i class="fa-brands fa-dev"></i>
+                       <h2> Full Stack Developer</h2>
+                        <p>
+                         Proficient in building scalable and dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in RESTful APIs, authentication, modular routing, and full deployment using tools like Render and MongoDB Atlas.
+                        </p>
+                         <a href="#projects">Learn more</a>
+                     </div>
+
+                       <div class="web-dev-card">
+                            <i class="fa-solid fa-laptop-code"></i>
+                             <h2>Junior SDE</h2>
+                             <p>
+                                Strong foundation in Core Java, OOPs, and DSA with real-world mentoring experience. Trained through Coding Ninjas and QSpiders, I focus on writing clean, efficient code and applying problem-solving skills to contribute effectively in team environments.
+                             </p>
+                            <a href="#experience">Learn more</a>
+                      </div>
+
+                </div>
+          </div>
+       </div>
+    <!-- ------------------------------------------ Portfolio_Section-------------------------------->
+     <div id="portfolio">
+        <div class="container">
+         <h1 class="sub-title">My Works</h1>
+              <div class="work-list">
+
+                <div class="work">
+                    <img src="./assets/work-01.png" alt="">
+                    <div class="layer">
+                        <h3>Explorique – Travel Listing Web App </h3>
+                        <p>A full-stack travel booking platform enabling users to seamlessly discover, book, and manage global stays through an intuitive interface.</p>
+                        <a href="https://explorique-1.onrender.com"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="./assets/work-02.png" alt="">
+                    <div class="layer">
+                        <h3>Spotify Clone  </h3>
+                        <p>A fully responsive Spotify-inspired music streaming UI built with modern web technologies, showcasing dynamic content and sleek design.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="./assets/work-03.png" alt="">
+                    <div class="layer">
+                        <h3>Amazon Clone  </h3>
+                        <p>An Amazon-like eCommerce front-end replica featuring product listings, search functionality, and a pixel-perfect user interface.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+              </div>
+             
+              <a href="" class="btn">See more</a>
+
+        </div>
+     </div>
+
+     <!-- -----------------------------------------Contact_Section-------------------------------------- -->
+      <div id="contact">
+        <div class="container">
+               <div class="row">
+
+                   <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> vinityadav885317@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91-8853173755</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/vinit-yadav-4b4753237"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vinityadav2407"><i class="fa-brands fa-github"></i> </a>
+                        <a href="https://www.instagram.com/vinityadav885317?igsh=YzljYTk1ODg3Zg== "> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://m.facebook.com/vinit.yadav.855450/"> <i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                       <a href="./assets/Vinit Yadav-FullstackDeveloper(8853173755).pdf" download class="btn btn2">Download CV</a>
+                   </div>
+
+                   <div class="contact-right">
+                       <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                       </form>
+                       <span id="success-msg"></span>
+                   </div>
+
+               </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Vinityadav. All Rights Reserved</p>
+        </div>
+      </div>
+<!-- ----------------- ConnectionofGoogle-Sheet to portfolioform---------------- -->
+<script src="app.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw_Cz5ndidSBHEwmELaqDteeJ-o1pSsioJrOybUwAaEq-R7wiywTXKZT6_VbLnNsBwl/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg=document.getElementById("success-msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Message sent Successfully";
+      setTimeout(function() {
+        msg.innerHTML = '';
+        form.reset(); // ✅ Delayed reset
+      }, 5000);
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+</script>
+</body>
+</html>
