@@ -191,7 +191,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    height: 90%;
+    height: 100%;
 }
 .work img{
     width:100%;
@@ -327,18 +327,22 @@ display: block;
 }
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(./assets/phone-size-portrait-img.jpg);
+       background-image: url(./assets/phone-size-portrait-img.jpg);
        background-position: -20px center;
        background-size: cover;
     }
 
     .header-text{
-    margin-top: 100%;
+    margin-top: 70%;
+    /* padding-bottom: 90%; */
     font-size: 16px ;
+    text-align: start;
    }
     .header-text h1{
         font-size: 30px;
-            /* margin-top: 20px; */
+            margin-top: 10%;
+            font-size: 30px;
+            width:80%;
     }
     nav .fa-solid{
         display: block;
